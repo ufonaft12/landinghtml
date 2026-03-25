@@ -75,8 +75,9 @@ a {
 
 .hero-cards {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: 1fr 1.4fr;
   gap: 16px;
+  direction: ltr;
 }
 
 /* Map Card */
@@ -89,6 +90,7 @@ a {
   flex-direction: column;
   gap: 12px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  direction: rtl;
 }
 
 .map-card__status {
@@ -175,7 +177,7 @@ a {
 .devices-card__fab {
   position: absolute;
   bottom: 16px;
-  left: 16px;
+  right: 16px;
   width: 48px;
   height: 48px;
   background: #2563eb;
