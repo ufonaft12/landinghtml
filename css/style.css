@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: "Heebo", sans-serif;
+  font-family: 'Rubik', sans-serif;
   background: #f0f4f8;
   color: #1a1a1a;
   line-height: 1.6;
@@ -355,9 +355,16 @@ a {
 .sidebar__headline h1 {
   font-size: 40px;
   font-weight: 900;
-  color: #2563eb;
+  color: #000000;
   line-height: 1.25;
   margin: 0 0 14px;
+}
+
+.gradient-text {
+  background: linear-gradient(180deg, #003EF5 0%, #002FB9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .sidebar__subtitle {
