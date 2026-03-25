@@ -71,6 +71,10 @@ a {
 /* ===== HERO SECTION ===== */
 .hero-section {
   width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 }
 
 .hero-cards {
@@ -90,7 +94,6 @@ a {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
   direction: rtl;
 }
 
@@ -103,8 +106,12 @@ a {
   border-radius: 50px;
   font-size: 14px;
   color: #374151;
-  width: fit-content;
+  width: 100%;
   cursor: pointer;
+}
+
+.map-card__status .status-text {
+  flex: 1;
 }
 
 .status-chevron {
@@ -179,9 +186,22 @@ a {
 }
 
 .devices-card__img-wrapper {
-  border-radius: 16px;
+  border-radius: 16px 16px 16px 16px;
   overflow: hidden;
   height: 100%;
+  position: relative;
+}
+
+/* Concave cutout on bottom-right corner for the fab button */
+.devices-card__img-wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 68px;
+  height: 68px;
+  background: #fff;
+  border-top-left-radius: 20px;
 }
 
 .devices-card img {
@@ -193,8 +213,8 @@ a {
 
 .devices-card__fab {
   position: absolute;
-  bottom: -8px;
-  right: -8px;
+  bottom: 8px;
+  right: 8px;
   width: 52px;
   height: 52px;
   background: #2563eb;
@@ -223,10 +243,10 @@ a {
 /* ===== BOTTOM TABS (Desktop) ===== */
 .bottom-tabs {
   display: flex;
-  background: #fff;
+  background: transparent;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  direction: rtl;
 }
 
 .bottom-tabs__item {
@@ -241,17 +261,19 @@ a {
   color: #6b7280;
   cursor: pointer;
   transition: color 0.2s, background 0.2s;
-  border-bottom: 3px solid transparent;
+  border-bottom: 2px solid #e5e7eb;
+  background: transparent;
 }
 
 .bottom-tabs__item.active {
-  color: #2563eb;
-  background: #eff6ff;
-  border-bottom-color: #2563eb;
+  color: #1a1a1a;
+  font-weight: 600;
+  background: transparent;
+  border-bottom-color: #1a1a1a;
 }
 
 .bottom-tabs__item:hover:not(.active) {
-  background: #f9fafb;
+  color: #374151;
 }
 
 /* ===== SIDEBAR COLUMN (Right/Sticky) ===== */
