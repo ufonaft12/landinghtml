@@ -49,7 +49,7 @@ a {
 
 /* ===== MAIN LAYOUT ===== */
 .main-layout {
-  max-width: 1200px;
+  max-width: 1920px;
   margin: 0 auto;
   padding: 24px;
   display: flex;
@@ -198,25 +198,25 @@ a {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 68px;
-  height: 68px;
+  width: clamp(48px, 3.5vw, 68px);
+  height: clamp(48px, 3.5vw, 68px);
   background: #fff;
-  border-top-left-radius: 20px;
+  border-top-left-radius: clamp(12px, 1vw, 20px);
 }
 
 .devices-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   display: block;
 }
 
 .devices-card__fab {
   position: absolute;
-  bottom: 8px;
-  right: 8px;
-  width: 52px;
-  height: 52px;
+  bottom: clamp(4px, 0.4vw, 8px);
+  right: clamp(4px, 0.4vw, 8px);
+  width: clamp(36px, 2.7vw, 52px);
+  height: clamp(36px, 2.7vw, 52px);
   background: #2563eb;
   color: #fff;
   border-radius: 50%;
@@ -229,8 +229,8 @@ a {
 }
 
 .devices-card__fab img {
-  width: 24px;
-  height: 24px;
+  width: clamp(16px, 1.25vw, 24px);
+  height: clamp(16px, 1.25vw, 24px);
   object-fit: contain;
   filter: brightness(0) invert(1);
 }
