@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
   background: #f0f4f8;
   color: #1a1a1a;
   line-height: 1.6;
@@ -73,7 +73,7 @@ a {
   width: 100%;
   background: #fff;
   border-radius: 20px;
-  padding: 20px 0 20px 20px;
+  padding: 40px 40px 40px 20px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
   overflow: hidden;
 }
@@ -129,8 +129,13 @@ a {
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
 }
 
 .map-card__map {
@@ -162,7 +167,7 @@ a {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background: linear-gradient(180deg, #003EF5, #002FB9);
+  background: linear-gradient(180deg, #003ef5, #002fb9);
   color: #fff;
   padding: 16px;
   border-radius: 14px;
@@ -198,7 +203,7 @@ a {
 
 /* Concave cutout on bottom-right corner for the fab button */
 .devices-card__img-wrapper::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   right: 0;
@@ -228,7 +233,9 @@ a {
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
-  transition: background 0.2s, transform 0.2s;
+  transition:
+    background 0.2s,
+    transform 0.2s;
   z-index: 2;
 }
 
@@ -264,7 +271,9 @@ a {
   font-weight: 500;
   color: #6b7280;
   cursor: pointer;
-  transition: color 0.2s, background 0.2s;
+  transition:
+    color 0.2s,
+    background 0.2s;
   border-bottom: 2px solid #e5e7eb;
   background: transparent;
 }
@@ -402,7 +411,9 @@ a {
   font-size: 18px;
   font-weight: 700;
   text-decoration: none;
-  transition: background 0.2s, transform 0.2s;
+  transition:
+    background 0.2s,
+    transform 0.2s;
   box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
   white-space: nowrap;
   flex-shrink: 0;
@@ -438,7 +449,9 @@ a {
   text-align: right;
   background: #fff;
   color: #374151;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
   direction: rtl;
 }
 
@@ -552,7 +565,6 @@ a {
   .bottom-tabs {
     display: none;
   }
-
 
   .map-card {
     order: 2;
