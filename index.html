@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ניהול קמפיינים בגוגל לבעלי מקצוע</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header (loaded from header.html) -->
+  <div id="header-placeholder"></div>
+
+  <main class="main-layout">
+    <!-- Left Column: Scrollable Content -->
+    <div class="content-column">
+
+      <!-- Section 1: Hero Content -->
+      <section class="hero-section">
+        <div class="hero-cards">
+
+          <!-- Map Card -->
+          <div class="map-card">
+            <div class="map-card__status">
+              <span class="status-dot"></span>
+              <span class="status-text"><strong>כרגע פתוח</strong> נסגר היום בשעה 18:00</span>
+            </div>
+            <div class="map-card__map">
+              <img src="images/map.png" alt="מפה - שדרות רוטשילד 123, תל אביב" />
+            </div>
+            <div class="map-card__address">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>שדרות רוטשילד 123, תל אביב</span>
+            </div>
+            <a href="#" class="map-card__btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+              <span>לתיאום פגישה אצלי</span>
+            </a>
+          </div>
+
+          <!-- Devices Image Card -->
+          <div class="devices-card">
+            <img src="images/devices.png" alt="שירותים לניהול מקצוע - Google Ads, Facebook Ads, Instagram Ads, LinkedIn Ads" />
+            <a href="#" class="devices-card__fab" aria-label="צור קשר">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Bottom Tab Bar (desktop) -->
+      <div class="bottom-tabs desktop-only">
+        <div class="bottom-tabs__item active">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+          </svg>
+          <span>הגעה לבית הלקוח</span>
+        </div>
+        <div class="bottom-tabs__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          <span>פגישה בקליניקה</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right Column: Sticky Sidebar -->
+    <aside class="sidebar-column">
+      <div class="sidebar-sticky">
+
+        <!-- Profile -->
+        <div class="sidebar__profile">
+          <div class="sidebar__profile-img">
+            <img src="images/profile.jpg" alt="רונן אפרמוף" />
+          </div>
+          <div class="sidebar__profile-info">
+            <h2>רונן אפרמוף</h2>
+            <p>מנהל קמפיינים בכיר</p>
+          </div>
+        </div>
+
+        <!-- Headline -->
+        <div class="sidebar__headline">
+          <h1>ניהול קמפיינים בגוגל<br>לבעלי מקצוע</h1>
+          <p class="sidebar__subtitle">קמפיינים בגוגל שמביאים לקוחות חדשים ואיכותיים כל שבוע</p>
+        </div>
+
+        <!-- Benefits -->
+        <ul class="sidebar__benefits">
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="3">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            <span>קהל יעד מותאם</span>
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="3">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            <span>אסטרטגיה אישית</span>
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="3">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            <span>לידים איכותיים</span>
+          </li>
+        </ul>
+
+        <!-- CTA -->
+        <a href="#" class="sidebar__cta">בוא נתחיל</a>
+
+        <!-- Phone Input (desktop) -->
+        <div class="sidebar__phone-input desktop-only">
+          <input type="tel" placeholder="הכנס מספר טלפון" />
+        </div>
+
+      </div>
+    </aside>
+  </main>
+
+  <!-- Mobile Bottom Action Bar -->
+  <div class="mobile-action-bar mobile-only">
+    <a href="#" class="mobile-action-bar__item">
+      <div class="mobile-action-bar__icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+        </svg>
+      </div>
+      <span>נווט אלי</span>
+    </a>
+    <a href="#" class="mobile-action-bar__item">
+      <div class="mobile-action-bar__icon whatsapp">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
+        </svg>
+      </div>
+      <span>WhatsApp</span>
+    </a>
+    <a href="tel:054-397-1559" class="mobile-action-bar__item">
+      <div class="mobile-action-bar__icon phone">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/>
+        </svg>
+      </div>
+      <span>חייג</span>
+    </a>
+    <a href="#" class="mobile-action-bar__item">
+      <div class="mobile-action-bar__icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+        </svg>
+      </div>
+      <span>הרשאונים</span>
+    </a>
+    <a href="#" class="mobile-action-bar__item highlight">
+      <div class="mobile-action-bar__icon cta">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/>
+        </svg>
+      </div>
+      <span>נגישות</span>
+    </a>
+  </div>
+
+  <script>
+    // Load header
+    fetch('header.html')
+      .then(r => r.text())
+      .then(html => {
+        document.getElementById('header-placeholder').innerHTML = html;
+        initMobileMenu();
+      });
+
+    function initMobileMenu() {
+      const burgerBtn = document.getElementById('burgerBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const menuOverlay = document.getElementById('menuOverlay');
+
+      if (!burgerBtn) return;
+
+      burgerBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open');
+        document.body.classList.toggle('menu-open');
+      });
+
+      menuOverlay.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        document.body.classList.remove('menu-open');
+      });
+
+      // Close menu on link click
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('open');
+          document.body.classList.remove('menu-open');
+        });
+      });
+    }
+  </script>
+</body>
+</html>
