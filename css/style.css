@@ -78,17 +78,18 @@ a {
   grid-template-columns: 1fr 1.4fr;
   gap: 16px;
   direction: ltr;
+  align-items: stretch;
 }
 
 /* Map Card */
 .map-card {
-  background: #fff;
+  background: linear-gradient(180deg, #f0f7ff 0%, #e8f4f8 100%);
   border-radius: 16px;
   overflow: hidden;
-  padding: 16px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
   direction: rtl;
 }
@@ -98,11 +99,17 @@ a {
   align-items: center;
   gap: 8px;
   background: #ecfdf5;
-  padding: 8px 14px;
+  padding: 10px 18px;
   border-radius: 50px;
-  font-size: 13px;
+  font-size: 14px;
   color: #374151;
   width: fit-content;
+  cursor: pointer;
+}
+
+.status-chevron {
+  flex-shrink: 0;
+  order: -1;
 }
 
 .status-dot {
@@ -123,7 +130,8 @@ a {
   border-radius: 12px;
   overflow: hidden;
   background: #e5e7eb;
-  aspect-ratio: 4/3;
+  flex: 1;
+  min-height: 200px;
 }
 
 .map-card__map img {
@@ -135,59 +143,76 @@ a {
 .map-card__address {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 13px;
-  color: #374151;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1a1a1a;
+  justify-content: flex-end;
 }
 
 .map-card__btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  background: #22c55e;
+  gap: 10px;
+  background: #2563eb;
   color: #fff;
-  padding: 12px;
-  border-radius: 12px;
-  font-size: 14px;
-  font-weight: 600;
+  padding: 16px;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 700;
   text-decoration: none;
   transition: background 0.2s;
+  margin-top: auto;
 }
 
 .map-card__btn:hover {
-  background: #16a34a;
+  background: #1d4ed8;
 }
 
 /* Devices Card */
 .devices-card {
   position: relative;
   border-radius: 16px;
+  overflow: visible;
+  background: transparent;
+}
+
+.devices-card__img-wrapper {
+  border-radius: 16px;
   overflow: hidden;
-  background: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  height: 100%;
 }
 
 .devices-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .devices-card__fab {
   position: absolute;
-  bottom: 16px;
-  right: 16px;
-  width: 48px;
-  height: 48px;
+  bottom: -8px;
+  right: -8px;
+  width: 52px;
+  height: 52px;
   background: #2563eb;
   color: #fff;
-  border-radius: 12px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
   transition: background 0.2s, transform 0.2s;
+  z-index: 2;
+}
+
+.devices-card__fab img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
 .devices-card__fab:hover {
