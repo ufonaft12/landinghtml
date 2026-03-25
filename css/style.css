@@ -278,7 +278,7 @@ a {
 
 /* ===== SIDEBAR COLUMN (Right/Sticky) ===== */
 .sidebar-column {
-  width: 380px;
+  width: 420px;
   flex-shrink: 0;
   direction: rtl;
 }
@@ -288,25 +288,26 @@ a {
   top: 88px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  gap: 24px;
-  text-align: right;
+  align-items: center;
+  gap: 28px;
+  text-align: center;
 }
 
 /* Profile */
 .sidebar__profile {
   display: flex;
   align-items: center;
-  gap: 14px;
-  flex-direction: row-reverse;
+  gap: 16px;
+  width: 100%;
+  justify-content: center;
 }
 
 .sidebar__profile-img {
-  width: 64px;
-  height: 64px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   overflow: hidden;
-  border: 3px solid #e0e7ff;
+  border: 3px solid #bfdbfe;
   flex-shrink: 0;
 }
 
@@ -316,8 +317,12 @@ a {
   object-fit: cover;
 }
 
+.sidebar__profile-info {
+  text-align: right;
+}
+
 .sidebar__profile-info h2 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   color: #1a1a1a;
   margin: 0;
@@ -326,24 +331,24 @@ a {
 .sidebar__profile-info p {
   font-size: 14px;
   color: #6b7280;
-  margin: 0;
+  margin: 2px 0 0;
 }
 
 /* Headline */
 .sidebar__headline {
-  text-align: right;
+  text-align: center;
 }
 
 .sidebar__headline h1 {
-  font-size: 36px;
-  font-weight: 800;
+  font-size: 40px;
+  font-weight: 900;
   color: #2563eb;
-  line-height: 1.3;
-  margin: 0 0 12px;
+  line-height: 1.25;
+  margin: 0 0 14px;
 }
 
 .sidebar__subtitle {
-  font-size: 15px;
+  font-size: 16px;
   color: #6b7280;
   line-height: 1.6;
   margin: 0;
@@ -356,43 +361,47 @@ a {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 100%;
+  gap: 12px;
+  align-items: flex-end;
 }
 
 .sidebar__benefits li {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 15px;
-  font-weight: 500;
-  color: #374151;
-  justify-content: flex-end;
+  font-size: 17px;
+  font-weight: 600;
+  color: #1a1a1a;
 }
 
 .sidebar__benefits li svg {
   flex-shrink: 0;
-  order: 1;
 }
 
-.sidebar__benefits li span {
-  order: 0;
+/* CTA Row */
+.sidebar__cta-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  direction: ltr;
 }
 
-/* CTA Button */
 .sidebar__cta {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   background: #2563eb;
   color: #fff;
-  padding: 14px 48px;
+  padding: 14px 36px;
   border-radius: 12px;
   font-size: 18px;
   font-weight: 700;
   text-decoration: none;
   transition: background 0.2s, transform 0.2s;
   box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .sidebar__cta:hover {
@@ -402,12 +411,22 @@ a {
 
 /* Phone Input */
 .sidebar__phone-input {
-  width: 100%;
+  flex: 1;
+  position: relative;
+  min-width: 0;
+}
+
+.sidebar__phone-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
 }
 
 .sidebar__phone-input input {
   width: 100%;
-  padding: 14px 18px;
+  padding: 14px 18px 14px 40px;
   border: 1px solid #d1d5db;
   border-radius: 12px;
   font-size: 14px;
@@ -522,10 +541,6 @@ a {
     align-items: center;
   }
 
-  .sidebar__benefits li {
-    justify-content: center;
-  }
-
   .hero-cards {
     grid-template-columns: 1fr;
   }
@@ -534,9 +549,6 @@ a {
     display: none;
   }
 
-  .sidebar__phone-input {
-    display: none;
-  }
 
   .map-card {
     order: 2;
